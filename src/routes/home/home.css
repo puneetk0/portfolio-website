@@ -97,6 +97,9 @@
   padding-bottom: 10px;
 }
 
+b{
+  font-weight: 600;
+}
 
 
 .photographs {
@@ -111,6 +114,74 @@
 aspect-ratio: 1 / 1;
 }
 
+.contact-section{
+  padding: 0 64px;
+}
+
+.contact-section h1{
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 24px;
+
+}
+
+.contact-section h1 a{
+  text-decoration: underline;
+}
+
+.contact-section h4{
+  color: #333;
+  font-size: 36px;
+}
+
+.contact-lists{
+  display: flex;
+  gap: 40px;
+  min-width: 100%;
+}
+
+.contact-list{
+  display: flex;
+  width: 33.33%;
+  justify-content: space-between;
+  padding: 32px 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; 
+  margin-top: 64px;
+  flex-wrap: no-wrap;
+}
+
+.contact-top{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-top img{
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.contact-top h3{
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 5px;
+}
+
+.contact-top p{
+  font-size: 16px;
+}
+
+.contact-bottom{
+  display: flex;
+  align-items: center;
+}
+.contact-bottom img{
+  padding: 12px;
+  background-color: rgba(160, 165, 172, 0.18);
+  border-radius: 8px;
+}
 /* Responsive styles */
 @media (max-width: 1024px) {
   .home-container {
@@ -165,6 +236,24 @@ aspect-ratio: 1 / 1;
   .photographs img {
     width: calc(50% - 32px); /* Adjust as necessary */
   }
+
+  .contact-list{
+    width: 45%;
+  }
+
+  .contact-lists{
+    flex-wrap: wrap;
+  }
+
+  .contact-section{
+    padding: 0 16px;
+  }
+    .contact-lists{
+      flex-wrap: wrap;
+    }
+  .photographs{
+    padding: 0 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -200,6 +289,29 @@ aspect-ratio: 1 / 1;
   .photographs img {
     width: 100%; /* Adjust as necessary */
   }
+  .contact-list{
+    width: 100%;
+  }
+.contact-section{
+  padding: 0 16px;
+}
+  .contact-lists{
+    flex-wrap: wrap;
+  }
+.photographs{
+  padding: 0 16px;
+}
+.contact-section h1{
+  font-size: 20px;
+}
+.contact-section a{
+  font-size: 18px;
+}
+
+.contact-section h4{
+  font-size: 20px;
+
+}
 }
 
 @media (max-width: 480px) {
@@ -222,5 +334,39 @@ aspect-ratio: 1 / 1;
 
   .desktop-images img {
     width: 11%; /* Adjust as necessary */
+  }
+
+  .contact-list{
+    width: 100%;
+  }
+
+  .contact-top h3{
+    font-size: 16px;
+  }
+
+  .contact-top p{
+    font-size: 12px;
+  }
+
+  .contact-bottom img{
+    padding: 10px;
+    border-radius: 6px;
+    height: 30px;
+    width: auto;
+  }
+
+  .contact-top img{
+    width: 20px;
+    height: 20px;
+    gap: 80px;
+  }
+
+  .contact-list{
+    padding: 24px 20px;
+    margin-top: 20px;
+  }
+
+  .contact-section h4{
+    margin-bottom: 36px;
   }
 }

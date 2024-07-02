@@ -11,8 +11,7 @@ const WebDev = () => {
     <div className="portfolio-header">
       <h1 className="work-title">Work</h1>
       <p className="intro">
-        I love to design and code web apps and my portfolio kinda shows my
-        interests love to design and code web apps
+      I'm passionate about designing and coding web apps, and my portfolio reflects my dedication to these interests.
       </p>
     </div>
 

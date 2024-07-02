@@ -7,6 +7,7 @@ import ScrollToTop from "./components/scroll-top/scroll-top";
 import UiDesign from "./components/scroll-top/uidesign/ui-design";
 import WebDev from "./components/web-dev/web-dev";
 import Photography from "./components/photography-projects/photography";
+import About from "./routes/about/about";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
           <Route path="/work/uidesign" element={<UiDesign />} />
           <Route path="/work/web-development" element={<WebDev />} />
           <Route path="/work/photography" element={<Photography />} />
+         
         </Route>
+        <Route path="/about" element={<About/>} />
       </Routes>
     </BrowserRouter>
   );

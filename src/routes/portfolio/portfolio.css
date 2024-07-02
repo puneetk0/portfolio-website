@@ -12,12 +12,12 @@
   .work-title {
     font-family: 'Caveat';
     font-size: 26px;
-    font-weight: bold;
+    font-weight: bolder;
   }
   
   .intro {
     font-size: 46px;
-    font-weight: 600;
+    font-weight: bold;
   }
   
   .title {
@@ -227,7 +227,10 @@
 .projects-tag::-webkit-scrollbar {
   display: none;
 }
-    
+.portfolio-tags:hover {
+  transform: translateY(0px);
+}
+
 
  
   }
