@@ -4,9 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./routes/navbar/navbar";
 import Portfolio from "./routes/portfolio/portfolio";
 import ScrollToTop from "./components/scroll-top/scroll-top";
-import UiDesign from "./components/scroll-top/uidesign/ui-design";
-import WebDev from "./components/web-dev/web-dev";
-import Photography from "./components/photography-projects/photography";
 import About from "./routes/about/about";
 
 function App() {
@@ -17,12 +14,9 @@ function App() {
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
           <Route path="/work" element={<Portfolio />} />
-          <Route path="/work/uidesign" element={<UiDesign />} />
-          <Route path="/work/web-development" element={<WebDev />} />
-          <Route path="/work/photography" element={<Photography />} />
-         
+          <Route path="/about" element={<About/>} />
         </Route>
-        <Route path="/about" element={<About/>} />
+       
       </Routes>
     </BrowserRouter>
   );

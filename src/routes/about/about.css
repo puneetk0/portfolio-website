@@ -1,0 +1,116 @@
+.about-container {
+  padding: 0 100px;
+  margin-top: 40px;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.about-header h1 {
+  color: #000;
+  text-align: center;
+  font-family: Caveat;
+  font-size: 64px;
+  font-weight: 700;
+  width: 70%;
+}
+
+.about-header p {
+  color: #333;
+  letter-spacing: 0.22px;
+  font-family: Mukta;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.about-header img {
+  height: auto;
+  width: 100%;
+}
+
+.fun-facts {
+  margin-top: 100px;
+}
+
+.fun-facts h1 {
+  color: #000;
+  font-family: Caveat;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 56px;
+}
+
+.fun-facts p {
+  color: #333;
+  font-size: 18px;
+  letter-spacing: 0.22px;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.about-info {
+  margin-top: 100px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.info-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-left h1 {
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.info-left{
+    width: 60%;
+}
+
+.info-right{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.info-right h1 {
+  font-size: 19px;
+  color: #000;
+}
+
+.info-right p {
+  color: #a0a5ac;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+@media (max-width: 768px) {
+    .about-container{
+        padding: 0;
+    }
+
+    .about-header h1{
+        font-size: 36px;
+        width: 90%;
+    }
+    .about-header p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .info-left h1{
+        margin-bottom: 16px;
+    }
+}
