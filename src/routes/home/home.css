@@ -166,7 +166,31 @@ b {
 
 .photographs img {
   aspect-ratio: 1 / 1;
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.3s ease;
 }
+
+.photographs img:hover {
+  transform: scale(1.05);
+}
+
+.popover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popover-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 
 .footer {
   margin-bottom: 100px;

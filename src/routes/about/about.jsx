@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './about.css'
-import aboutImage from '../../assests/homeprojects/about.svg'
+import aboutImage from '../../assests/homeprojects/about.png'
 
 const About = () => {
   return (
@@ -18,16 +18,6 @@ I also tried a lot of other skills like YouTube, where I got over 10 thousand su
    </div>
 
    <hr className="divider" />
-
-  <div className='fun-facts'>
-    <h1>Fun facts about me</h1>
-    <p>💻 I designed and developed this website from scratch, which I’m proud of.</p>
-    <p>😊 I always wanted to be a youtuber and tried bunch of different niche like gaming, tech and now that I got 11 thousand subs on my channel, last video I uploaded was about an year ago :(</p>
-  <p>🍵 When I’m not designing, you can find me watching Netflix, lifting weights, and looking for design inspirations.</p>
-  <p>🌴 I also love to play different sports mainly badminton, basketball, snooker and ofcourse Cricket (yeah avg. Indian guy)</p>
-  </div>
-
-  <hr className="divider" />
 
   <div className='about-info'>
     <div className='info-container'>
@@ -66,12 +56,12 @@ I also tried a lot of other skills like YouTube, where I got over 10 thousand su
       </div>
       <div className='info-list'>
         <div className='info-left'>
-        <h1> toolkit</h1>  
+        <h1> tool-kit</h1>  
         </div>
         <div className='info-right'>
         <div>
             <h1>Design</h1>
-            <p>Figma/FigJan, Photoshop, Canva</p>
+            <p>Figma/FigJam, Photoshop, Canva</p>
           </div>
         
           <div>
@@ -93,13 +83,27 @@ I also tried a lot of other skills like YouTube, where I got over 10 thousand su
 
     
   </div>
+  
+  
+
+  <hr className="divider" />
+
+  <div className='fun-facts'>
+    <h1>Fun facts about me</h1>
+    <p>😊 I always wanted to be a youtuber and tried bunch of different niche like gaming, tech and now that I got 11 thousand subs on my channel, last video I uploaded was about an year ago :)</p>
+  <p>🍵 When I’m not designing, you can find me watching Netflix, lifting weights, and looking for design inspirations.</p>
+  <p>🌴 I also love to play different sports mainly badminton, basketball, snooker and ofcourse Cricket (yeah avg. Indian guy)</p>
+  <p>🍿 I'm seriously addicted to web series, but I can give you some killer recommendations like HIMYM, Friends, and TVD. Trust me, you won't regret it. </p>
+  <p>🎵 There's always something that people can't live without, right? For me, it's music. I'm really into Punjabi music (I'm Punjabi, lol) and, of course, Hindi romantic and classical hits (again typical Indian, haha). </p>
+  <p>💻 I designed and developed this website from scratch, which I’m proud of.</p>
+  </div>
   <hr className="divider" />
   <div className="footer">
       <h1>Have a question, some feedback, or an outrageous idea? Please, please, please send it my way. ✰ </h1> 
       <div className="social-links">
-          <Link>→ Email </Link>
-          <Link>→ LinkedIn </Link>
-          <Link>→ Instagram </Link>
+          <Link to="mailto:puneetkathuria2525@gmail.com"><span>→</span>  Email </Link>
+          <Link to="https://www.linkedin.com/in/puneet-kathuria-33a296220/"><span>→</span>  LinkedIn </Link>
+          <Link to="https://www.instagram.com/puneet.25_"><span>→</span>  Instagram </Link>
         </div>
         <p>Designed and coded by Puneet ♥️—with help of recommedations from my dear friends! </p>
         <h4 className="final">Thanks for visiting!</h4>
