@@ -11,7 +11,7 @@
 }
 
 .intro {
-  color: #333;
+  color: var(--text-color);
 
   font-family: "Nunito Sans";
   font-size: 52px;
@@ -22,10 +22,11 @@
 
 .social-links {
   margin-top: 48px;
+  
 }
 
 .social-links a {
-  color: #333;
+  color: var(--text-color);
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -45,7 +46,7 @@
 }
 
 .title {
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--gray);
   font-family: "Nunito Sans";
   font-size: 76px;
   font-style: normal;
@@ -92,7 +93,7 @@
 }
 
 .project-title h1 {
-  color: #000;
+  color: var(--text-color);
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
@@ -104,7 +105,7 @@
 }
 
 .project-title p {
-  color: #333;
+  color: var(--text-color);
   font-size: 24px;
 }
 
@@ -133,7 +134,7 @@
 }
 
 .view-all a {
-  color: #333;
+  color: var(--text-color);
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -191,14 +192,13 @@ b {
   max-height: 90%;
 }
 
-
 .footer {
   margin-bottom: 100px;
   margin-top: 160px;
 }
 
 .footer h1 {
-  color: #333;
+  color: var(--text-color);
 
   font-family: Mukta;
   font-size: 40px;
@@ -223,13 +223,12 @@ b {
 
 .divider {
   margin-top: 120px;
-  border-color: #33333341;
+  border-color:  var(--gray);
 }
 
 @media (max-width: 1024px) {
   .home-container {
-    padding: 16px;
-    padding-left: 32px;
+    padding: 0px;
     margin-top: 100px;
   }
 
@@ -244,7 +243,6 @@ b {
     font-weight: bold;
   }
 
-  
   .photographs img {
     width: calc(50% - 32px); /* Adjust as necessary */
   }
@@ -267,12 +265,12 @@ b {
     padding: 0;
     margin-top: 32px;
   }
-  .home-desktop{
+  .home-desktop {
     margin-bottom: 120px;
   }
-.social-links{
-  margin-top: 32px;
-}
+  .social-links {
+    margin-top: 32px;
+  }
   .social-links a {
     font-size: 16px;
     margin-right: 16px;
@@ -283,10 +281,10 @@ b {
     font-size: 32px;
     margin: 80px 0 64px 0;
   }
-  .project-wrap{
+  .project-wrap {
     gap: 24px;
   }
-  .project-tag p{
+  .project-tag p {
     padding: 8px 16px;
     border-radius: 4px;
     font-size: 12px;
@@ -294,18 +292,18 @@ b {
   .projects-section {
     gap: 100px;
   }
-  .project-title h1{
+  .project-title h1 {
     font-size: 28px;
     font-weight: 600;
     line-height: 40px;
   }
-  .project-title p{
+  .project-title p {
     font-size: 15px;
   }
-  .project-image{
+  .project-image {
     padding: 40px;
   }
-  .project-image img{
+  .project-image img {
     max-width: 120%;
     height: auto;
   }
@@ -321,25 +319,25 @@ b {
   .contact-lists {
     flex-wrap: wrap;
   }
-  .view-all{
+  .view-all {
     margin-top: 32px;
   }
-  .view-all a{
+  .view-all a {
     font-size: 16px;
   }
-  .footer{
+  .footer {
     margin-top: 100px;
   }
-  .footer h1{
+  .footer h1 {
     font-size: 28px;
   }
-  .footer p{
+  .footer p {
     margin-top: 80px;
     font-size: 15px;
     letter-spacing: 0;
-    color: #333;
-  } 
-  .footer h4{
+    color: var(--text-color);
+  }
+  .footer h4 {
     font-size: 14px;
     font-weight: 300;
   }

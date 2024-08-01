@@ -11,7 +11,6 @@
 }
 
 .about-header h1 {
-  color: #000;
   text-align: center;
   font-family: Caveat;
   font-size: 64px;
@@ -20,7 +19,7 @@
 }
 
 .about-header p {
-  color: #333;
+  color: var(--text-color);
   letter-spacing: 0.22px;
   font-family: Mukta;
   font-size: 20px;
@@ -37,7 +36,6 @@
 }
 
 .fun-facts h1 {
-  color: #000;
   font-family: Caveat;
   font-size: 36px;
   font-weight: 500;
@@ -45,7 +43,7 @@
 }
 
 .fun-facts p {
-  color: #333;
+  color: var(--text-color);
   font-size: 18px;
   letter-spacing: 0.22px;
   margin-bottom: 32px;
@@ -56,10 +54,10 @@
   margin-top: 100px;
 }
 
-.info-container{
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .info-list {
@@ -68,49 +66,54 @@
 }
 
 .info-left h1 {
-  color: #000;
   font-family: "Nunito Sans";
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.info-left{
-    width: 60%;
+.info-left {
+  width: 60%;
 }
 
-.info-right{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+.info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .info-right h1 {
   font-size: 19px;
-  color: #000;
+  color: var(--text-color);
 }
 
 .info-right p {
-  color: #a0a5ac;
+  color: var(--gray);
   font-size: 16px;
   font-weight: 300;
 }
 
-
 @media (max-width: 768px) {
-    .about-container{
-        padding: 0;
-    }
+  .about-container {
+    padding: 0;
+  }
 
-    .about-header h1{
-        font-size: 36px;
-        width: 90%;
-    }
-    .about-header p{
-        font-size: 16px;
-        line-height: 28px;
-    }
-    .info-left h1{
-        margin-bottom: 16px;
-    }
+  .about-header h1 {
+    font-size: 34px;
+    width: 100%;
+  }
+  .about-header p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .info-left h1 {
+    margin-bottom: 16px;
+  }
+
+  .fun-facts p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+  }
 }

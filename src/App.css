@@ -1,11 +1,62 @@
-body{
-  font-family: "Mukta", sans-serif;
-  padding: 0 160px;
+:root {
+  --background-color: #ffffff;
+  --text-color: #333;
+  --gray: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] {
+  --background-color: #000;
+  --text-color: #ffffff;
+  --gray: #ffffffc4;
 }
 
 
+
+
+body {
+  font-family: "Mukta", sans-serif;
+  padding: 0 160px;
+  scroll-behavior: smooth;
+  background-color: var(--background-color) !important;
+  color: var(--text-color);
+}
+/* *, h1, h2, h3, h4, h5, h6, p, a{
+  color: white !important;
+  background-color: black;
+} */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+
+  background: #00000033;
+}
+
+::selection {
+  color: black;
+  background: #00000033;
+}
+@media (max-width: 1300px) {
+  body {
+    padding: 0 64px;
+  }
+}
+
 @media (max-width: 768px) {
-  body{
+  body {
     padding: 0 32px;
   }
 }
+

@@ -1,53 +1,45 @@
+.work-title {
+  font-family: "Caveat";
+  font-size: 26px;
+  font-weight: bolder;
+}
 
-  
-  .work-title {
-    font-family: 'Caveat';
-    font-size: 26px;
-    font-weight: bolder;
-  }
-  
+.intro {
+  font-weight: bold;
+}
+
+.projects-tag {
+  margin-bottom: 64px;
+  font-size: 15px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.portfolio-tags {
+  padding: 8px 24px;
+  border-radius: 24px;
+  border: 0.5px solid #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-tags:hover {
+  background-color: #333;
+  transform: translateY(-4px);
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 480px) {
   .intro {
-    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
   }
-  
-
-  
-  
-  .projects-tag {
-    margin-bottom: 64px;
-    font-size: 15px;
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+  .work-title {
+    font-size: 18px;
   }
-  
-  .portfolio-tags {
-    padding: 8px 24px;
-    border-radius: 24px;
-    border: 0.5px solid #333;
-    transition: color 0.3s ease, transform 0.3s ease;
+  .portfolio-container {
+    margin-top: 32px;
   }
-  
-  .portfolio-tags:hover {
-    background-color: #333;
-    transform: translateY(-4px);
-    font-weight: 500;
-    color: white;
-  }
-
-  
-  
-  
-  
-  
-  @media (max-width: 480px) {
-    .intro {
-      font-size: 24px;
-      line-height: 40px;
-      font-weight: 700;
-    }
-
-
-   
-  }
-  
+}

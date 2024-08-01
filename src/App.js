@@ -5,6 +5,7 @@ import Navbar from "./routes/navbar/navbar";
 import Portfolio from "./routes/portfolio/portfolio";
 import ScrollToTop from "./components/scroll-top/scroll-top";
 import About from "./routes/about/about";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
