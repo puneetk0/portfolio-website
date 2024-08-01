@@ -1,12 +1,11 @@
 // Navbar.js
 import React, { Fragment, useEffect, useState } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import './navbar.css';
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   const [animate, setAnimate] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -15,12 +14,6 @@ const Navbar = () => {
     const timer = setTimeout(() => setAnimate(false), 1000);
     return () => clearTimeout(timer);
   }, [theme]);
-
-  useEffect(() => {
-    setAnimate(true);
-    const timer = setTimeout(() => setAnimate(false), 1000);
-    return () => clearTimeout(timer);
-  }, [location]);
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
